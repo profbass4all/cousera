@@ -48,3 +48,20 @@ let isAuthenticated = true;
 
 let authenticationStatus = isAuthenticated? 'Authenticated': 'Not authenticated';
 console.log("Authentication Status:", authenticationStatus);
+
+let role = 'Employee';
+let access;
+
+if (role == 'Employee' || role == 'Enrolled Member' || role == 'Subscriber'){
+    if(role == 'Employee'){
+        access = 'You are authorized to have Dietary services'
+    }else if (role == 'Enrolled Member'){
+        access = 'You are authorized to have access to dieary services and one-on-one interaction with dietician'
+    }else{
+        access = 'You have partial access to facilitate dietary services'
+    }
+}else{
+    access = 'You have to subscribe to use this facility'
+}
+
+console.log('Access: ', access)
