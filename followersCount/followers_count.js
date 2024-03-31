@@ -16,3 +16,14 @@ function checkCountValue() {
     displayCount(); // Display the count
     checkCountValue(); // Check count value and display messages
   }
+function displayReset(){
+    alert('Count has been reset to zero')
+}
+function showResetValue(){
+    document.getElementById('countDisplay').textContent = count
+}
+  function resetCount(){
+    count = 0
+    displayReset()
+    showResetValue()
+  }
